@@ -1,2 +1,2 @@
 # prMenu
-![image](https://github.com/pengrain/prMenu/screenshot.png)
+![image](https://github.com/pengrain/prMenu/raw/master/screenshot.png)
