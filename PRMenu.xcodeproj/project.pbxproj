@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C255DD4E1CCCB65B00F85BBE /* PrMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C255DD4D1CCCB65B00F85BBE /* PrMenuView.m */; };
 		C2DF8ED71BF87F0E00D4119A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DF8ED61BF87F0E00D4119A /* main.m */; };
 		C2DF8EDA1BF87F0E00D4119A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DF8ED91BF87F0E00D4119A /* AppDelegate.m */; };
 		C2DF8EDD1BF87F0E00D4119A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DF8EDC1BF87F0E00D4119A /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C255DD4C1CCCB65B00F85BBE /* PrMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrMenuView.h; sourceTree = "<group>"; };
+		C255DD4D1CCCB65B00F85BBE /* PrMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrMenuView.m; sourceTree = "<group>"; };
 		C2DF8ED21BF87F0E00D4119A /* PRMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PRMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DF8ED61BF87F0E00D4119A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C2DF8ED81BF87F0E00D4119A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +104,7 @@
 		C2DF8ED41BF87F0E00D4119A /* PRMenu */ = {
 			isa = PBXGroup;
 			children = (
+				C2DF8F081BF87FCF00D4119A /* PRMenu */,
 				C2DF8ED81BF87F0E00D4119A /* AppDelegate.h */,
 				C2DF8ED91BF87F0E00D4119A /* AppDelegate.m */,
 				C2DF8EDB1BF87F0E00D4119A /* ViewController.h */,
@@ -138,6 +142,15 @@
 				C2DF8EFC1BF87F0E00D4119A /* Info.plist */,
 			);
 			path = PRMenuUITests;
+			sourceTree = "<group>";
+		};
+		C2DF8F081BF87FCF00D4119A /* PRMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C255DD4C1CCCB65B00F85BBE /* PrMenuView.h */,
+				C255DD4D1CCCB65B00F85BBE /* PrMenuView.m */,
+			);
+			name = PRMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2DF8EDD1BF87F0E00D4119A /* ViewController.m in Sources */,
+				C255DD4E1CCCB65B00F85BBE /* PrMenuView.m in Sources */,
 				C2DF8EDA1BF87F0E00D4119A /* AppDelegate.m in Sources */,
 				C2DF8ED71BF87F0E00D4119A /* main.m in Sources */,
 			);
@@ -412,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PRMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pengrun.PRMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PRMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pengrun.PRMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +512,7 @@
 				C2DF8F011BF87F0E00D4119A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2DF8F021BF87F0E00D4119A /* Build configuration list for PBXNativeTarget "PRMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +521,7 @@
 				C2DF8F041BF87F0E00D4119A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2DF8F051BF87F0E00D4119A /* Build configuration list for PBXNativeTarget "PRMenuUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +530,7 @@
 				C2DF8F071BF87F0E00D4119A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

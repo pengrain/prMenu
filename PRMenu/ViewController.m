@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "PrMenuView.h"
 
-@interface ViewController ()
+@interface ViewController ()<PrMenuViewDelegate>
+
 
 @end
 
@@ -16,7 +18,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+//    self.view.backgroundColor = [UIColor whiteColor];
+    
+    CGFloat w =    [UIScreen mainScreen].bounds.size.width;
+    CGFloat h = [UIScreen mainScreen].bounds.size.height;
+
+    
+    PrMenuView *view = [[PrMenuView alloc] initWithCenter:CGPointMake(w-30, h-30) Diameter:40];
+    view.delegate = self;
+    [self.view addSubview:view];
+}
+
+- (void)menuViewBtnClick:(UIButton *)btn{
+    NSLog(@"%ld", btn.tag);
 }
 
 - (void)didReceiveMemoryWarning {
