@@ -23,7 +23,7 @@
 ````
 -
 
-![image](https://github.com/pengrain/prMenu/raw/master/PRMenu.gif)
+![pengrain](https://github.com/srxboys/prMenu/blob/master/PRMenu.gif)
 
 -
 
