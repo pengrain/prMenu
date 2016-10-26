@@ -20,17 +20,21 @@
     [super viewDidLoad];
 //    self.view.backgroundColor = [UIColor whiteColor];
     
-    CGFloat w =    [UIScreen mainScreen].bounds.size.width;
+    CGFloat w = [UIScreen mainScreen].bounds.size.width;
     CGFloat h = [UIScreen mainScreen].bounds.size.height;
 
-    
+    /**
+     * 动画菜单
+     *      Center  : 位于 屏幕(center) 哪里 / Where is the screen center
+     *      Diameter: (+、x)按钮 大小 / (+、x) Button size
+     */
     PrMenuView *view = [[PrMenuView alloc] initWithCenter:CGPointMake(w-30, h-30) Diameter:40];
     view.delegate = self;
     [self.view addSubview:view];
 }
 
 - (void)menuViewBtnClick:(UIButton *)btn{
-    NSLog(@"%ld", btn.tag);
+    NSLog(@"%zd", btn.tag);
 }
 
 - (void)didReceiveMemoryWarning {
